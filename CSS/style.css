@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+html{
+    scroll-behavior:smooth;
+
+}
+body{
+    user-select: none;
+}
+
+.header{
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0px 15px 0px 5px;
+}
+.header h1{
+    width: 330px;
+    font-family: 'Fugaz One', cursive;
+    background-color: aliceblue;
+    background-image: linear-gradient(
+      90deg,
+      hsl(240deg 100% 20%) 0%,
+      hsl(229deg 100% 24%) 14%,
+      hsl(222deg 100% 28%) 31%,
+      hsl(217deg 100% 31%) 49%,
+      hsl(213deg 100% 35%) 64%,
+      hsl(210deg 100% 38%) 75%,
+      hsl(207deg 100% 41%) 84%,
+      hsl(204deg 100% 44%) 91%,
+      hsl(201deg 100% 47%) 96%,
+      hsl(199deg 100% 50%) 100%
+    );
+    /* height: 40px; */
+    font-size: 40px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header .fa-bars, .fa-x{
+    font-size: 30px;
+}
+.fa-x{
+    display: none;
+}
+
+.item-1 nav{
+    display: none;
+}
+.item-1 nav ul{
+
+    display: flex;
+    width: 97.5%;
+    justify-content: space-around;
+    background-color:#301E67    ;
+    font-size: 25px;
+    border-radius:0px 0px 10px 10px;
+    animation-name: navs;
+    animation-duration: 0.5s;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+@keyframes navs{
+    0%{
+        height: 0vh;
+    }100%{
+        height:3.5vh;
+    }
+}
+
+.item-1 nav ul li{
+    list-style: none;
+    color: whitesmoke;
+}
+.carousel-container {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 210px;
+    /* overflow: hidden; */
+  }
+  
+  .carousel-item {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+  .carousel-item img{
+    height: 70vh;
+    width: 97vw;
+  }
+  .prev{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+  }
+  .next{
+    position: absolute;
+    right: 5%;
+    background-color: transparent;
+    border: none;
+    top: 40%;
+
+    font-size: 40px;
+  }
+  .item-3{
+    position: sticky;
+    top: 2%;
+
+    display: flex;
+    justify-content: center;
+}
+.grid{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    border: 2px solid #301E67;
+    border-radius: 30px;
+    box-shadow: 0px 0px 8px hsl(0, 0%, 0%,0.4);
+    background-color: hsl(34, 78%, 91%,0.5);
+    backdrop-filter: blur(12px);
+
+}
+.grid .col-1 ,.col-2  ,.col-3  ,.col-4{ 
+    border-radius: 30px;
+    text-align: end;
+    padding:0px 30px 0px 30px;
+    color:#301E67;
+    font-weight: 700;
+}
+.grid .col-1:hover,.col-2:hover ,.col-3:hover ,.col-4:hover{
+    background-color: #301E67;
+    color: white;
+}
+
+.content4-1{
+   /* background-color: #301E67; */
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* gap: 0px; */
+   line-height: 0.5px;
+   /* background-color: blue; */
+}
+
+.content4-1 h1{
+    font-size: 50px;
+}
+.content4-1 p{
+    width: 550px;
+    font-size: 20px;
+    line-height: 25px;
+}
+.row{
+    display: flex;
+}
+.co-1{
+    /* background-color: #301E67; */
+    width: 50%;
+}
+.co-2{
+    /* background-color: blueviolet; */
+    width: 50%;
+
+}
+.roco{
+    display: flex;
+    flex-direction: row;
+}
+#roco-1 ,#roco-2, #roco-3, #roco-4{
+    height: 40vh;
+    overflow-y: hidden;
+    
+}
+
+.con{
+    color:black;
+    display: flex;
+    flex-direction: column;
+}
+.con h2{
+    /* word-spacing: 0.01px; */
+    line-height: 35px;
+    font-size: 36px;
+}
+.con p{
+    line-height: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+.co-1 img, .co-2 img{
+    height: 300px;
+    width: 376px;
+}
+.gacol{
+    display: flex;
+    justify-content: space-around;
+}
+.gacon{
+    text-align: center;
+}
+.gacol img{
+    height: 40vh;
+    width: 60vh;
+    border-radius:0px 0px 15px 15px ;
+}
+.gacol .gacolco{
+    transform: translateY(-100px);
+    color: white;
+    margin-left: 15px;
+}
+.gacon{
+    line-height: 10px;
+}
+
+
+.item-5{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #301E67;
+    border-radius: 10px;
+    text-align: center;   
+}
+.grcol{
+    background-color: white;
+    height: 55px;
+    width: 135px;
+    padding: 4px;
+    border-radius: 10px;
+}
+.grcol:hover{
+    background-color: rgb(50, 45, 45,0.3);
+}
+.grid-2{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 98%;
+    height: 300px;
+    padding: 15px;
+}   
+.grid-3{
+    display: flex;
+    justify-content: space-around;
+}
+.grcol p{
+    font-size: 15px;
+}
+
+
+.item-7{
+    /* width: 500px; */
+    width: 99%;
+    text-align: center;
+    /* background-color: #301E67; */
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#contact-page{
+    display: flex;
+    flex-direction: column;
+}
+#contact-page input{
+    width: 700px;
+    height: 50px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+#contact-page input[type='text']{
+    text-align: center;
+    font-size: 20px;
+}
+#contact-page input::placeholder{
+    text-align: center;
+    font-size: 20px;
+}
+textarea{
+    resize: none;
+}
+footer{
+    text-align: center;
+    background-color: #301E67;
+}
+.totop{
+    position: fixed;
+    bottom: 7%;
+    right: 1%;
+}
+.totop button{
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    scroll-behavior: smooth;
+    
+}
+.totop i{
+    color: black;
+
+}
+.item-8{
+    position: fixed;
+    top: 0%;
+    display: none;
+    background-color: hsl(0, 4%, 5%,0.6);
+}
+.modal{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(11, 10, 10);
+}
+.modal-cont{
+    background-color: white;
+    width: 60vw;
+    height: 80vh;
+    border-radius: 20px;
+    padding: 20px;
+}
+.modal .headers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+
+
